@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/start_light_auth?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 连接池的配置信息
+    # 初始化大小，最小，最大
+    druid:
+      initial-size: 5
+      max-active: 20
+      min-idle: 5
+      max-wait: 5000
+      phy-timeout-millis: 7200000
+      remove-abandoned: true
+      remove-abandoned-timeout: 180
+      test-while-idle: true
+      test-on-return: false
+      test-on-borrow: false
+      validation-query: SELECT 1
+      validation-query-timeout: 1
+      time-between-eviction-runs-millis: 15000
+      default-auto-commit: true
+      log-abandoned: true
+      connection-properties: socketTimeout=3000;connectTimeout=1000
