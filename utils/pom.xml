@@ -14,10 +14,6 @@
     <description>工具类模块</description>
     <packaging>jar</packaging>
 
-    <properties>
-        <java.version>14</java.version>
-    </properties>
-
     <dependencies>
 
         <dependency>
